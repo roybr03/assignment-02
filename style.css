@@ -36,6 +36,10 @@ body{
     font-weight: 800px;
     background-color:  rgb(239, 36, 202);
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .banner{
     background-image: url(assets/hero-bg.png);
@@ -299,4 +303,128 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+
+/*.............responssive.............*/
+
+
+/*........mobile responssive........*/
+
+@media screen and (min-width: 440px) and (max-width: 768px) {
+ 
+    .nav-bar li,a{
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav{
+        
+    }
+   .podcast{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;text-align: center;
+}
+.podcast-rating{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+   .podcast-content{
+        gap: 20px;
+        width: 100%;
+   }
+
+   .podcast-content h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+   .choose-content{
+     
+    display: grid;
+    gap: 20 px;
+    grid-template-areas: 
+    "box1  box1  box1"
+    "box2  box2  box2"
+    "box3  box3  box3"
+    "box4  box4  box4"
+    "box5  box5  box5";
+}
+
+.episode-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.choose-container{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.host-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.host-meet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+     
+}
+.container{
+    margin: 50px 0px;
+}
+}
+
+
+
+/*.........................*/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .nav img{
+        display: none;
+    }
+    
+    .episode-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+   .host-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+    .host-meet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 993px) {
+    .nav img{
+        display: none;
+    }
 }
