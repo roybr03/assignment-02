@@ -63,6 +63,22 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     padding: 100px;
+    position: relative;
+}
+.new{
+ 
+    background-color: #00ff88;
+    color: #1A0B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 30px;
+    left: 830px;
+    font-size: 18px;
+    font-weight: 900px;
 }
 .btn{
     display: flex;
